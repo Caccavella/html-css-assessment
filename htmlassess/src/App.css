@@ -1,0 +1,174 @@
+.App {
+  background-image: url('./img/main-bg.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin:auto;
+  padding: 0;
+  font-family: 'Audiowide', cursive;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+}
+
+.links {
+  display: none;
+}
+
+.left-side {
+  height: 100%;
+  width: 50%;
+  /* background: lightgoldenrodyellow; */
+  justify-content: flex-start;
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  /* background: black; */
+  margin-top: 30px;
+  margin-left: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 9px;
+}
+
+.line {
+  height: 7px;
+  width: 40px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  /* padding-top: 10px; */
+  /* margin-top: 30px; */
+}
+
+.right-side {
+  height: 100%;
+  width: 50%;
+  /* background: lightcoral; */
+  justify-content: flex-end;
+}
+
+.fa-facebook {
+  height: 100px;
+  width: 100px;
+  color: white;
+  margin-top: 6vh;
+  margin-right: 30px;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.fa-twitter {
+  height: 100px;
+  width: 100px;
+  color: white;
+  margin-top: 6vh;
+  margin-right: 50px;
+  position: absolute;
+  right: 55px;
+}
+
+.appname {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+}
+
+.subname {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.textcontainer {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.downarrow {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  margin-bottom: 5vh;
+  left: 0;
+  margin-left: 50%;
+  transform: translateX(-50%)
+}
+
+.arrow {
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+  border-top: 10px solid lightgrey;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* margin-top: 40%; */
+}
+
+.rectangle {
+  width: 3px;
+  height: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20%;
+  background: lightgrey;
+}
+
+
+@media(min-width: 800px) {
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    display: none;
+  }
+  .header {
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .links {
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    font-size: 50px;
+  }
+  .links a {
+    width: 33vw;
+  
+  }
+}
